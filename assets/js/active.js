@@ -11,7 +11,16 @@ Author: RRDevs
         /*==========================
            Scroll To Up Init
         ============================*/
-
+        $.scrollUp({
+            scrollName: 'scrollUp', // Element ID
+            topDistance: '1110', // Distance from top before showing element (px)
+            topSpeed: 2000, // Speed back to top (ms)
+            animation: 'slide', // Fade, slide, none
+            animationInSpeed: 300, // Animation in speed (ms)
+            animationOutSpeed: 300, // Animation out speed (ms)
+            scrollText: '<i class="fal fa-angle-up"></i>', // Text for element
+            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
 
         // Sticky Menu
         $(window).scroll(function() {
